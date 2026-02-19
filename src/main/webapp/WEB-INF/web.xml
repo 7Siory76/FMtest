@@ -7,6 +7,10 @@
     <servlet>
         <servlet-name>Front</servlet-name>
         <servlet-class>servlet.FrontServlet</servlet-class>
+        <init-param>
+            <param-name>controller-package</param-name>
+            <param-value>com.itu.gest_emp.controller</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
