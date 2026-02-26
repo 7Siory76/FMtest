@@ -1,7 +1,9 @@
  package com.itu.gest_emp.controller;
 
+ import servlet.annotations.Controller;
  import servlet.annotations.Url;
 
+ @Controller
  public class HelloController{
 
      @Url("/hello")
