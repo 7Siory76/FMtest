@@ -25,11 +25,14 @@
          return "/pages/hello.jsp";
      }
 
-     // Test 4 : retour ModelView -> forward vers la vue JSP
+     // Test 4 : retour ModelView -> forward avec donnees
      @Url("/modelview")
      public ModelView modelview() {
          ModelView mv = new ModelView();
          mv.setView("/pages/hello.jsp");
+         mv.addItem("nom", "Rakoto");
+         mv.addItem("prenom", "Jean");
+         mv.addItem("age", 25);
          return mv;
      }
 
