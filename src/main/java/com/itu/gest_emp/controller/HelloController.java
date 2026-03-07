@@ -1,5 +1,6 @@
  package com.itu.gest_emp.controller;
 
+ import servlet.ModelView;
  import servlet.annotations.Controller;
  import servlet.annotations.Url;
 
@@ -24,12 +25,15 @@
          return "/pages/hello.jsp";
      }
 
-     @Url("/bug")
-     public int bug() {
-         return 42;
+     // Test 4 : retour ModelView -> forward vers la vue JSP
+     @Url("/modelview")
+     public ModelView modelview() {
+         ModelView mv = new ModelView();
+         mv.setView("/pages/hello.jsp");
+         return mv;
      }
 
-     // Test 4 : retour int (non supporte) -> message d'erreur
+     // Test 5 : retour int (non supporte) -> message d'erreur
      @Url("/error")
      public int error() {
          return 42;
