@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h2>Test de récupération d'attribut</h2>
-    <p>L'URL demandée est : ${url}</p>
+    <h2>Test de recuperation d'attribut</h2>
+    <p>L'URL demandee est : ${url}</p>
+    <h2>Donnees du controller</h2>
+    <p>Nom : ${nom}</p>
+    <p>Prenom : ${prenom}</p>
+    <p>Age : ${age}</p>
 </body>
 </html>
