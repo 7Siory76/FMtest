@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Etudiant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Formulaire Etudiant</h2>
+    <form action="../etudiant" method="GET">
+        <label>Nom : <input type="text" name="nom"></label><br><br>
+        <label>Prenom : <input type="text" name="prenom"></label><br><br>
+        <label>Age : <input type="number" name="age"></label><br><br>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <hr>
+    <h2>Recherche</h2>
+    <form action="../recherche" method="GET">
+        <label>Recherche : <input type="text" name="query"></label><br><br>
+        <label>Page : <input type="number" name="page" value="1"></label><br><br>
+        <button type="submit">Rechercher</button>
+    </form>
+</body>
+</html>

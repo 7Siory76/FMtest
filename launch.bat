@@ -44,7 +44,7 @@ for /r %SRC_DIR% %%f in (*.java) do (
     set SOURCES=!SOURCES! "%%f"
 )
 
-javac -d %CLASSES_DIR% -sourcepath %SRC_DIR% -cp !CLASSPATH! %SOURCES%
+javac -parameters -d %CLASSES_DIR% -sourcepath %SRC_DIR% -cp !CLASSPATH! %SOURCES%
 if %errorlevel% neq 0 (
     echo Erreur de compilation. Veuillez corriger les erreurs et réessayer.
     exit /b %errorlevel%
