@@ -14,6 +14,15 @@
         <tr><td>Age</td><td>${age}</td></tr>
     </table>
     <br>
-    <a href="/pages/formulaire.html">Retour au formulaire</a>
+    <a href="formulaire.html">Retour au formulaire</a>
+
+    <hr>
+    <h2>Ajouter un etudiant</h2>
+    <form action="../etudiant" method="GET">
+        <label>Nom : <input type="text" name="nom"></label><br><br>
+        <label>Prenom : <input type="text" name="prenom"></label><br><br>
+        <label>Age : <input type="number" name="age"></label><br><br>
+        <button type="submit">Envoyer</button>
+    </form>
 </body>
 </html>
